@@ -1,0 +1,7 @@
+<div class="form-element"><label for="firstname">Firstname:</label> {{input id='firstname' type="text" value=model.firstName}}</div>
+<div class="form-element"><label for="lastname">Lastname:</label>{{input id='lastname' type="text" value=model.lastName}}</div>
+<div class="form-element"><label for="fullname">Fullname:</label> <span id="fullname">{{model.fullName}}</span></div>
+<div class="form-element"><label for="gender">Gender:</label> {{input id='gender' type="text" value=model.gender}}</div>
+<div class="form-element"><label for="createdAt">CreatedAt:</label><span id="createdAt">{{model.createdAt}}</span></div>
+
+<button type="button" {{action "save"}}>SAVE</button>

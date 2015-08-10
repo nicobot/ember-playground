@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: Helvetica, Arial;
+}
+
+.box {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.form-element {
+  margin-bottom: 1em;
+}
+
+.form-element label {
+  margin-right: 10px;
+}
+
+tr + tr {
+  border-top: 1px solid #CCC
+}

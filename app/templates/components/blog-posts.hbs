@@ -1,0 +1,10 @@
+<div class="main">
+    <h1>This is the main layout</h1>
+    <table>
+        {{#each posts as |post|}}
+        <tr>
+            {{yield post post.title post.body (action "showMessage")}}
+        </tr>
+        {{/each}}
+    </table>
+</div>

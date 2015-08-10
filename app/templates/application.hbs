@@ -1,0 +1,37 @@
+<h2 id="title">Welcome to Ember.js</h2>
+
+<div class="box">
+    FirstName: {{firstName}}
+    <p>Edit title: {{input type="text" value=firstName}}</p>
+    <button {{action "navigateToBlogPost"}}>Transition!</button>
+    <hr/>
+  {{outlet}}
+</div>
+
+<div class="box">
+    <h2>People</h2>
+  {{people-list model=people}}
+</div>
+
+<div class="box">
+    <div>Testing!</div>
+    {{blog-post title="Daleeeeeeeeee"}}
+</div>
+
+<div class="box">
+    <div>Each:</div>
+  {{#blog-posts posts=model as |_ two three showMessage|}}
+      <td>{{two}}</td>
+      <td>{{three}}</td>
+      <button type="button" {{action showMessage}}>Message!</button>
+  {{/blog-posts}}
+</div>
+
+<div class="box">
+    <div>Each 2</div>
+  {{#each model as |post|}}
+    {{#blog-post title=post.title}}
+        <span>{{post.body}}</span>
+    {{/blog-post}}
+  {{/each}}
+</div>
